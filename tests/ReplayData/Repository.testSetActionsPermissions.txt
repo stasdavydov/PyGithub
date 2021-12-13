@@ -6,6 +6,28 @@ None
 {'Authorization': 'token private_token_removed', 'User-Agent': 'PyGithub/Python', 'Content-Type': 'application/json'}
 {"enabled": false}
 204
-[('Server', 'GitHub.com'), ('Date', 'Mon, 13 Dec 2021 12:40:48 GMT'), ('X-OAuth-Scopes', 'repo'), ('X-Accepted-OAuth-Scopes', ''), ('X-GitHub-Media-Type', 'github.v3; format=json'), ('X-RateLimit-Limit', '5000'), ('X-RateLimit-Remaining', '4984'), ('X-RateLimit-Reset', '1639402191'), ('X-RateLimit-Used', '16'), ('X-RateLimit-Resource', 'core'), ('Access-Control-Expose-Headers', 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset'), ('Access-Control-Allow-Origin', '*'), ('Strict-Transport-Security', 'max-age=31536000; includeSubdomains; preload'), ('X-Frame-Options', 'deny'), ('X-Content-Type-Options', 'nosniff'), ('X-XSS-Protection', '0'), ('Referrer-Policy', 'origin-when-cross-origin, strict-origin-when-cross-origin'), ('Content-Security-Policy', "default-src 'none'"), ('Vary', 'Accept-Encoding, Accept, X-Requested-With'), ('X-GitHub-Request-Id', 'DDCE:E1DA:5599A8:57093B:61B73F50')]
+[('Server', 'GitHub.com'), ('Date', 'Mon, 13 Dec 2021 19:22:16 GMT'), ('X-OAuth-Scopes', 'repo'), ('X-Accepted-OAuth-Scopes', ''), ('X-GitHub-Media-Type', 'github.v3; format=json'), ('X-RateLimit-Limit', '5000'), ('X-RateLimit-Remaining', '4989'), ('X-RateLimit-Reset', '1639426819'), ('X-RateLimit-Used', '11'), ('X-RateLimit-Resource', 'core'), ('Access-Control-Expose-Headers', 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset'), ('Access-Control-Allow-Origin', '*'), ('Strict-Transport-Security', 'max-age=31536000; includeSubdomains; preload'), ('X-Frame-Options', 'deny'), ('X-Content-Type-Options', 'nosniff'), ('X-XSS-Protection', '0'), ('Referrer-Policy', 'origin-when-cross-origin, strict-origin-when-cross-origin'), ('Content-Security-Policy', "default-src 'none'"), ('Vary', 'Accept-Encoding, Accept, X-Requested-With'), ('X-GitHub-Request-Id', '0F8A:EFCF:57453:5A224:61B79D67')]
+
+
+https
+PUT
+api.github.com
+None
+/repos/stasdavydov/PyGithub/actions/permissions
+{'Authorization': 'token private_token_removed', 'User-Agent': 'PyGithub/Python', 'Content-Type': 'application/json'}
+{"enabled": true}
+204
+[('Server', 'GitHub.com'), ('Date', 'Mon, 13 Dec 2021 19:22:16 GMT'), ('X-OAuth-Scopes', 'repo'), ('X-Accepted-OAuth-Scopes', ''), ('X-GitHub-Media-Type', 'github.v3; format=json'), ('X-RateLimit-Limit', '5000'), ('X-RateLimit-Remaining', '4988'), ('X-RateLimit-Reset', '1639426819'), ('X-RateLimit-Used', '12'), ('X-RateLimit-Resource', 'core'), ('Access-Control-Expose-Headers', 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset'), ('Access-Control-Allow-Origin', '*'), ('Strict-Transport-Security', 'max-age=31536000; includeSubdomains; preload'), ('X-Frame-Options', 'deny'), ('X-Content-Type-Options', 'nosniff'), ('X-XSS-Protection', '0'), ('Referrer-Policy', 'origin-when-cross-origin, strict-origin-when-cross-origin'), ('Content-Security-Policy', "default-src 'none'"), ('Vary', 'Accept-Encoding, Accept, X-Requested-With'), ('X-GitHub-Request-Id', '0F8B:3D05:D2906:D685A:61B79D68')]
+
+
+https
+PUT
+api.github.com
+None
+/repos/stasdavydov/PyGithub/actions/permissions
+{'Authorization': 'token private_token_removed', 'User-Agent': 'PyGithub/Python', 'Content-Type': 'application/json'}
+{"enabled": true, "allowed_actions": "all"}
+204
+[('Server', 'GitHub.com'), ('Date', 'Mon, 13 Dec 2021 19:22:16 GMT'), ('X-OAuth-Scopes', 'repo'), ('X-Accepted-OAuth-Scopes', ''), ('X-GitHub-Media-Type', 'github.v3; format=json'), ('X-RateLimit-Limit', '5000'), ('X-RateLimit-Remaining', '4987'), ('X-RateLimit-Reset', '1639426819'), ('X-RateLimit-Used', '13'), ('X-RateLimit-Resource', 'core'), ('Access-Control-Expose-Headers', 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset'), ('Access-Control-Allow-Origin', '*'), ('Strict-Transport-Security', 'max-age=31536000; includeSubdomains; preload'), ('X-Frame-Options', 'deny'), ('X-Content-Type-Options', 'nosniff'), ('X-XSS-Protection', '0'), ('Referrer-Policy', 'origin-when-cross-origin, strict-origin-when-cross-origin'), ('Content-Security-Policy', "default-src 'none'"), ('Vary', 'Accept-Encoding, Accept, X-Requested-With'), ('X-GitHub-Request-Id', '0F8C:FAFA:3BF96:3E7B4:61B79D68')]
 
 

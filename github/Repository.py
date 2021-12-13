@@ -3695,7 +3695,7 @@ class Repository(github.GithubObject.CompletableGithubObject):
         :rtype: bool
         """
         assert isinstance(enabled, bool), enabled
-        assert (enabled and allowed_actions is not None and allowed_actions in {None, 'all', 'local_only', 'selected'}) or \
+        assert (enabled and allowed_actions in {None, 'all', 'local_only', 'selected'}) or \
             not enabled and allowed_actions is None, allowed_actions
         put_parameters = {
             "enabled": enabled,

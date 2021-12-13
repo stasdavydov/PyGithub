@@ -49,6 +49,8 @@
 import datetime
 from unittest import mock
 
+import pytest
+
 import github
 
 from . import Framework
@@ -452,6 +454,10 @@ class Repository(Framework.TestCase):
 
     def testSetActionsPermissions(self):
         self.assertTrue(self.repo.set_actions_permissions(False))
+        with pytest.raises(AssertionError):
+            self.repo.set_actions_permissions(False, 'all')
+        self.assertTrue(self.repo.set_actions_permissions(True))
+        self.assertTrue(self.repo.set_actions_permissions(True, allowed_actions='all'))
 
     def testCollaborators(self):
         lyloa = self.g.get_user("Lyloa")
