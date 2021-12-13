@@ -450,6 +450,9 @@ class Repository(Framework.TestCase):
     def testDeleteSecret(self):
         self.assertTrue(self.repo.delete_secret("secret_name"))
 
+    def testSetActionsPermissions(self):
+        self.assertTrue(self.repo.set_actions_permissions(False))
+
     def testCollaborators(self):
         lyloa = self.g.get_user("Lyloa")
         self.assertFalse(self.repo.has_in_collaborators(lyloa))

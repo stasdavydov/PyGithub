@@ -3687,6 +3687,26 @@ class Repository(github.GithubObject.CompletableGithubObject):
         )
         return github.CheckRun.CheckRun(self._requester, headers, data, completed=True)
 
+    def set_actions_permissions(self, enabled, allowed_actions=None):
+        """
+        :calls: `PUT /repos/{owner}/{repo}/actions/permissions <https://docs.github.com/en/rest/reference/actions#set-github-actions-permissions-for-a-repository>`_
+        :param enabled: bool Whether GitHub Actions is enabled on the repository.
+        :param allowed_actions: str The permissions policy that controls the actions that are allowed to run. Can be one of: all, local_only, or selected
+        :rtype: bool
+        """
+        assert isinstance(enabled, bool), enabled
+        assert (enabled and allowed_actions is not None and allowed_actions in {None, 'all', 'local_only', 'selected'}) or \
+            not enabled and allowed_actions is None, allowed_actions
+        put_parameters = {
+            "enabled": enabled,
+        }
+        if enabled and allowed_actions is not None:
+            put_parameters['allowed_actions'] = allowed_actions
+        status, headers, data = self._requester.requestJson(
+            "PUT", f"{self.url}/actions/permissions", input=put_parameters
+        )
+        return status == 204
+
     def _initAttributes(self):
         self._allow_merge_commit = github.GithubObject.NotSet
         self._allow_rebase_merge = github.GithubObject.NotSet
